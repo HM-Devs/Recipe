@@ -1,27 +1,41 @@
+@font-face {
+  font-family: myFont;
+  src: url(fonts/Montserrat.ttf);
+}
+
 body {
-    background-color: powderblue;
+    background-color: rgb(84, 82, 82);
   }
   
   h1 {
-    color: blue;
-    display: flex;
-    justify-content: center;
+    color:black;
     font-size: 50px;
     padding: 10px;
+    text-align: center;
+    font-family: myFont;
   }  
 
-  .menu-items{
-    display:flex;
-    flex-flow: row;
+  .menu-container {
+    display: flex;
     justify-content: center;
-    gap: 100px;
-  
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
   }
 
-  .menu-items2{
-    display:flex;
-    flex-flow: row;
-    justify-content: center;
-    gap: 100px;
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: myFont;
+    height:auto;
+    width:400px;
   }
+
+
 
